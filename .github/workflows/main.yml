@@ -1,0 +1,25 @@
+QR-Master-Pro/
+├── .github/
+│   └── workflows/
+│       └── build-apk.yml           # Automated cloud APK builder (GitHub Actions)
+├── app/
+│   ├── build.gradle.kts            # App dependencies & SDK configuration
+│   ├── proguard-rules.pro          # Code shrinking & obfuscation rules
+│   └── src/
+│       └── main/
+│           ├── AndroidManifest.xml # Camera, vibration & network permissions
+│           ├── java/com/example/
+│           │   ├── MainActivity.kt
+│           │   ├── data/           # Room Database, DAOs, and QR history models
+│           │   ├── service/        # Adsterra advertising & QR generator engines
+│           │   └── ui/             # Jetpack Compose UI (Screens, Components, Theme)
+│           └── res/                # Launcher icons, drawables, strings, themes
+├── gradle/
+│   └── libs.versions.toml          # Centralized Android dependencies version catalog
+├── .env.example                    # Template for API keys & secrets
+├── .gitignore                      # Git ignore rules for clean repository state
+├── build.gradle.kts                # Root project build configuration
+├── gradle.properties               # Memory & JVM flags for Gradle
+├── metadata.json                   # Google AI Studio application identity
+├── settings.gradle.kts             # Module definitions and repository mirrors
+└── README.md                       # Complete documentation and setup guide
